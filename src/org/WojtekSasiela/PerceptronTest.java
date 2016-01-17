@@ -22,14 +22,10 @@ public class PerceptronTest {
         w[2] = 1;
         w[3] = 0;
 
-        iSetX[0][0] = -1;
-        iSetX[0][1] = -1;
-        iSetX[1][0] = -1;
-        iSetX[1][1] = 1;
-        iSetX[2][0] = 1;
-        iSetX[2][1] = -1;
-        iSetX[3][0] = 1;
-        iSetX[3][1] = 1;
+        iSetX[0][0] = -1; iSetX[0][1] = -1;
+        iSetX[1][0] = -1; iSetX[1][1] = 1;
+        iSetX[2][0] = 1;  iSetX[2][1] = -1;
+        iSetX[3][0] = 1;  iSetX[3][1] = 1;
 
         iSetD[0] = 1;
         iSetD[1] = 1;

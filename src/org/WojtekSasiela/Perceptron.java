@@ -1,5 +1,6 @@
 package org.WojtekSasiela;
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -170,6 +171,12 @@ public class Perceptron {
 
     // metoda losująca wagi o wartościach z przedziału [a;b]
     public double DrawWeight(double a, double b) {
+
+        //  Random random = new Random();
+        //  return ThreadLocalRandom.current().nextDouble(a, b);
+        //  return a + (b - a) * random.nextDouble();
+        //  return Math.random() * (b - a) + a;
+
         return ThreadLocalRandom.current().nextDouble(a, b);
     }
 
@@ -181,7 +188,7 @@ public class Perceptron {
         if (f == 1){ funkcjaAktywacji = "unipolarna"; };
         if (f == -1){ funkcjaAktywacji = "bipolarna"; };
         String napis;
-        napis = "STAN PERCEPTRONU: \n";
+        napis = "STAN PERCEPTRONU - Wiersz " + krok + ": \n";
         napis+= "N= "+ n +", \n";
         napis+= "s="+ s +", \n";
         napis+= "y="+ y +", \n";
@@ -197,16 +204,17 @@ public class Perceptron {
         napis+= "Neurony:, \n";
         napis+= "x0 | x1 | x2 \n";
         napis+= "-------------\n";
-        napis+= " "+iSetX[0][0]+" |  "+iSetX[0][1]+" | \n";
-        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" | \n";
-        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" | \n";
-        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" | \n";
+        napis+= " "+iSetX[krok][0]+" |  "+iSetX[krok][1]+" | \n";
+//        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" | \n";
+//        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" | \n";
+//        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" | \n";
 //
 //        napis+= " "+iSetX[0][0]+" |  "+iSetX[0][1]+" |  "+iSetX[0][2]+" \n";
 //        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" |  "+iSetX[1][2]+" \n";
 //        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" |  "+iSetX[2][2]+" \n";
 //        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" |  "+iSetX[3][2]+" \n";
 
+        napis+= "Punkt stały: "+ Test();
         return napis;
     }
 }

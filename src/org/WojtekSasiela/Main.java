@@ -5,19 +5,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Projekt Perceptron");
 
+        // wartosci zostana wygenerowane przez metode
         double[] w = new double[4]; // pamiec perceptronu (macierz wag dla 1 wiersza)
-        w[0] = 0.45;
-        w[1] = -0.50;
-        w[2] = 0.97;
-        w[3] = 0.97;
 
         double[][] iSetX = new double[4][2];
         iSetX[0][0] = -1; iSetX[0][1] = -1;
         iSetX[1][0] = -1; iSetX[1][1] = 1;
-        iSetX[2][0] = 1; iSetX[2][1] = -1;
-        iSetX[3][0] = 1; iSetX[3][1] = 1;
+        iSetX[2][0] = 1;  iSetX[2][1] = -1;
+        iSetX[3][0] = 1;  iSetX[3][1] = 1;
 
-        double[]iSetD = new double[4];
+        double[] iSetD = new double[4];
         iSetD[0] = 1;
         iSetD[1] = 1;
         iSetD[2] = 1;
@@ -33,10 +30,18 @@ public class Main {
                 1// Ro, współczynnik uczenia
         );
 
-                for(int i=0; i<1; i++) // liczba krokow do wykonania np. 30
-                {
-                    p.LearningStep();
-                }
+        int a = -2, b = 2;
 
+        w[0] = p.DrawWeight(a, b);
+        w[1] = p.DrawWeight(a, b);
+        w[2] = p.DrawWeight(a, b);
+        w[3] = p.DrawWeight(a, b);
+
+        for (int i = 0; i < 2; i++) // liczba krokow do wykonania np. 30
+        {
+            p.LearningStep();
+        }
+
+        p.ResetLearningProcess();
     }
 }
