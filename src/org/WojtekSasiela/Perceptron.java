@@ -187,12 +187,14 @@ public class Perceptron {
         String funkcjaAktywacji = "";
         if (f == 1){ funkcjaAktywacji = "unipolarna"; };
         if (f == -1){ funkcjaAktywacji = "bipolarna"; };
-        String napis;
-        napis = "STAN PERCEPTRONU - Wiersz " + krok + ": \n";
+        String napis = "";
+        int nr_wiersza = krok+1;
+        napis+="Stan perceptronu \n";
+        napis+= "Funkcja aktywacji: "+ funkcjaAktywacji +", \n";
+        napis+="====== NR WIERSZA: " + nr_wiersza + " ======= \n";
         napis+= "N= "+ n +", \n";
         napis+= "s="+ s +", \n";
         napis+= "y="+ y +", \n";
-        napis+= "Funkcja aktywacji: "+ funkcjaAktywacji +", \n";
         napis+= "Wagi:, \n";
         napis+= "w0 | w1 | w2 | w3 \n";
         napis+= "------------------\n";
@@ -214,7 +216,7 @@ public class Perceptron {
 //        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" |  "+iSetX[2][2]+" \n";
 //        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" |  "+iSetX[3][2]+" \n";
 
-        napis+= "Punkt stały: "+ Test();
+        napis+= "Punkt stały: "+ Test() + "\n";
         return napis;
     }
 }

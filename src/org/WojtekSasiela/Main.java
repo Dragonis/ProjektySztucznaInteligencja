@@ -1,18 +1,22 @@
 package org.WojtekSasiela;
 
+import javax.swing.*;
+
 public class Main {
 
+
+
     public static void main(String[] args) {
+
         System.out.println("Projekt Perceptron");
 
-        // wartosci zostana wygenerowane przez metode
-        double[] w = new double[4]; // pamiec perceptronu (macierz wag dla 1 wiersza)
+        double[] w = new double[4]; // pamiec perceptronu (macierz wag dla aktualnie iterowanego wiersza)
 
         double[][] iSetX = new double[4][2];
-        iSetX[0][0] = -1; iSetX[0][1] = -1;
-        iSetX[1][0] = -1; iSetX[1][1] = 1;
-        iSetX[2][0] = 1;  iSetX[2][1] = -1;
-        iSetX[3][0] = 1;  iSetX[3][1] = 1;
+        iSetX[0][0] = 0; iSetX[0][0] = 0;
+        iSetX[0][0] = 0; iSetX[0][0] = 1;
+        iSetX[0][0] = 1; iSetX[0][0] = 0;
+        iSetX[0][0] = 1; iSetX[0][0] = 1;
 
         double[] iSetD = new double[4];
         iSetD[0] = 1;
@@ -30,18 +34,28 @@ public class Main {
                 1// Ro, współczynnik uczenia
         );
 
-        int a = -2, b = 2;
+        // macierz wag bedzie zapisana w postaci macierzy
+//        [ DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
+//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
+//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);]
 
+        int a = -2, b = 2;
         w[0] = p.DrawWeight(a, b);
         w[1] = p.DrawWeight(a, b);
         w[2] = p.DrawWeight(a, b);
         w[3] = p.DrawWeight(a, b);
 
-        for (int i = 0; i < 2; i++) // liczba krokow do wykonania np. 30
+        for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
         {
             p.LearningStep();
         }
 
         p.ResetLearningProcess();
+
+        Perceptron_WojciechSasiela okno = new Perceptron_WojciechSasiela();
+
+
+
+
     }
 }
