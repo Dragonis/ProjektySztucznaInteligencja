@@ -1,5 +1,7 @@
 package org.WojtekSasiela;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -177,7 +179,8 @@ public class Perceptron {
         //  return a + (b - a) * random.nextDouble();
         //  return Math.random() * (b - a) + a;
 
-        return ThreadLocalRandom.current().nextDouble(a, b);
+        double digit = ThreadLocalRandom.current().nextDouble(a, b);
+        return new BigDecimal(digit).setScale(3, RoundingMode.HALF_UP).doubleValue();
     }
 
     // metoda pozwalająca na konwersją obiektu klasy Perceptron na łańcuch znaków (na potrzeby wyświetlania stanu obiektu)
@@ -189,34 +192,44 @@ public class Perceptron {
         if (f == -1){ funkcjaAktywacji = "bipolarna"; };
         String napis = "";
         int nr_wiersza = krok+1;
-        napis+="Stan perceptronu \n";
-        napis+= "Funkcja aktywacji: "+ funkcjaAktywacji +", \n";
-        napis+="====== NR WIERSZA: " + nr_wiersza + " ======= \n";
-        napis+= "N= "+ n +", \n";
-        napis+= "s="+ s +", \n";
-        napis+= "y="+ y +", \n";
-        napis+= "Wagi:, \n";
-        napis+= "w0 | w1 | w2 | w3 \n";
-        napis+= "------------------\n";
-        napis+= " "+w[0]+" |  "+w[1]+" |  "+w[2]+"  | "+w[3]+"\n";
-        napis+= "Macierz d:, \n";
-        napis+= "d0 | d1 | d2 | d4\n";
-        napis+= "-----------------\n";
-        napis+= " "+iSetD[0]+" |  "+iSetD[1]+" |  "+iSetD[2]+" | "+iSetD[3]+" \n";
-        napis+= "Neurony:, \n";
-        napis+= "x0 | x1 | x2 \n";
-        napis+= "-------------\n";
-        napis+= " "+iSetX[krok][0]+" |  "+iSetX[krok][1]+" | \n";
-//        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" | \n";
-//        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" | \n";
-//        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" | \n";
-//
-//        napis+= " "+iSetX[0][0]+" |  "+iSetX[0][1]+" |  "+iSetX[0][2]+" \n";
-//        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" |  "+iSetX[1][2]+" \n";
-//        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" |  "+iSetX[2][2]+" \n";
-//        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" |  "+iSetX[3][2]+" \n";
 
-        napis+= "Punkt stały: "+ Test() + "\n";
+        String leftAlignFormat = "| %-4s    | %-4s | %.2f | %.2f| %.2f    | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %n";
+
+        System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
+        System.out.format("|  wiersz |  N   |  s   |  y   |  w0     |  w1  |  w2  |  w3  |  d0  |  d1  |  d2  |  d3  |  x0  |  x1  |%n");
+        System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
+            System.out.format(leftAlignFormat,nr_wiersza, n, s, y, w[0], w[1], w[2], w[3], iSetD[0], iSetD[1], iSetD[2], iSetD[3], iSetX[krok][0], iSetX[krok][1]);
+        System.out.format("+---------+------+------+------+--------+------+------+------+------+------+------+------+------+------+%n");
+
+//        napis+="Stan perceptronu \n";
+//        napis+= "Funkcja aktywacji: "+ funkcjaAktywacji +", \n";
+//        napis+="====== NR WIERSZA: " + nr_wiersza + " ======= \n";
+//        napis+= "N= "+ n +", \n";
+//        napis+= "s="+ s +", \n";
+//        napis+= "y="+ y +", \n";
+//        napis+= "Wagi:, \n";
+//        napis+= "  w0 | w1 | w2 | w3 \n";
+//        napis+= "------------------\n";
+//        napis+= " "+w[0]+" |  "+w[1]+" |  "+w[2]+"  | "+w[3]+"\n";
+//        napis+= "Macierz d:, \n";
+//        napis+= "d0 | d1 | d2 | d4\n";
+//        napis+= "-----------------\n";
+//        napis+= " "+iSetD[0]+" |  "+iSetD[1]+" |  "+iSetD[2]+" | "+iSetD[3]+" \n";
+//        napis+= "Neurony:, \n";
+//        napis+= "x0 | x1 | x2 \n";
+//        napis+= "-------------\n";
+//        napis+= " "+iSetX[krok][0]+" |  "+iSetX[krok][1]+" | \n";
+//                            //        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" | \n";
+//                            //        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" | \n";
+//                            //        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" | \n";
+//                            //
+//                            //        napis+= " "+iSetX[0][0]+" |  "+iSetX[0][1]+" |  "+iSetX[0][2]+" \n";
+//                            //        napis+= " "+iSetX[1][0]+" |  "+iSetX[1][1]+" |  "+iSetX[1][2]+" \n";
+//                            //        napis+= " "+iSetX[2][0]+" |  "+iSetX[2][1]+" |  "+iSetX[2][2]+" \n";
+//                            //        napis+= " "+iSetX[3][0]+" |  "+iSetX[3][1]+" |  "+iSetX[3][2]+" \n";
+//
+//        napis+= "Punkt stały: "+ Test() + "\n";
+
         return napis;
     }
 }

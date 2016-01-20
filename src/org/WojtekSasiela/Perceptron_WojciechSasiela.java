@@ -15,9 +15,14 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.layout.FormatLayout;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Dragonis on 19.01.2016.
@@ -35,6 +40,13 @@ public class Perceptron_WojciechSasiela extends JFrame {
         setContentPane(rootPanel);
         pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        table1.setModel(new FilenameTableModel());
+        rootPanel.add(table1,BorderLayout.CENTER);
+        rootPanel.add(table1.getTableHeader(), BorderLayout.NORTH);
+
+        table1.setSize(300,300);
+
         GenerujBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,13 +68,13 @@ public class Perceptron_WojciechSasiela extends JFrame {
                 frame.setSize(450,350);
                 wykresPanel.removeAll();
                 wykresPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+                wykresPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5)); // komponent przechodzi do nastepnej lini
                 wykresPanel.add(frame);
                 wykresPanel.setVisible(true);
-                wykresPanel.setSize(450,350);
             }
         });
 
-        setSize(500,500);
+        setSize(1000,500);
         setVisible(true);
 
     }
