@@ -5,6 +5,8 @@ import java.math.RoundingMode;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static org.WojtekSasiela.Perceptron.ANSI_RESET;
+
 /**
  * Created by Dragonis on 17.01.2016.
  */
@@ -112,7 +114,7 @@ public class Perceptron {
 
     // metoda wykonująca jeden krok procesu uczenia
     public void LearningStep() {
-        int a = -10, b = 10;
+        int a = -1, b = 1;
 
         // macierz wag bedzie zapisana w postaci macierzy
 //        [ DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
@@ -201,6 +203,9 @@ public class Perceptron {
 
     // metoda pozwalająca na konwersją obiektu klasy Perceptron na łańcuch znaków (na potrzeby wyświetlania stanu obiektu)
 
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_RED = "\u001B[31m";
     @Override
     public String toString() {
         String funkcjaAktywacji = "";
@@ -209,10 +214,10 @@ public class Perceptron {
         String napis = "";
         int nr_wiersza = krok+1;
 
-        String leftAlignFormat = "| %-4s    | %-4s | %.2f | %.2f| %.2f    | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %n";
+        String leftAlignFormat = "| %-4s    | %-4s | "+ANSI_BLUE+"%.2f"+ANSI_RESET+" "+ANSI_RED+"| %.2f"+ANSI_RESET+"| %.2f    | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %n";
 
         System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
-        System.out.format("|  wiersz |  N   |  s   |  y   |  w0     |  w1  |  w2  |  w3  |  d0  |  d1  |  d2  |  d3  |  x0  |  x1  |%n");
+        System.out.format("|  wiersz |  n   |  "+ANSI_BLUE+"s"+ANSI_RESET+"   |  "+ANSI_RED+"y"+ANSI_RESET+"   |  w0     |  w1  |  w2  |  w3  |  d0  |  d1  |  d2  |  d3  |  x0  |  x1  |%n");
         System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
             System.out.format(leftAlignFormat,nr_wiersza, n, s, y, w[0], w[1], w[2], w[3], iSetD[0], iSetD[1], iSetD[2], iSetD[3], iSetX[krok][0], iSetX[krok][1]);
         System.out.format("+---------+------+------+------+--------+------+------+------+------+------+------+------+------+------+%n");

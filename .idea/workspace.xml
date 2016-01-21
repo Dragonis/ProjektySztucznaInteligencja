@@ -33,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -70,64 +70,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1129" column="44" selection-start-line="1129" selection-start-column="44" selection-end-line="1129" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#193958#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#9052#9053#0" expanded="false" />
-                <element signature="e#9114#9115#0" expanded="false" />
-                <element signature="e#9887#9888#0" expanded="false" />
-                <element signature="e#9934#9935#0" expanded="false" />
-                <element signature="e#10272#10273#0" expanded="false" />
-                <element signature="e#10312#10313#0" expanded="false" />
-                <element signature="e#12356#12357#0" expanded="false" />
-                <element signature="e#12409#12410#0" expanded="false" />
-                <element signature="e#13052#13053#0" expanded="false" />
-                <element signature="e#13083#13084#0" expanded="false" />
-                <element signature="e#37521#37522#0" expanded="false" />
-                <element signature="e#37567#37568#0" expanded="false" />
-                <element signature="e#38880#38881#0" expanded="false" />
-                <element signature="e#38928#38929#0" expanded="false" />
-                <element signature="e#57195#57196#0" expanded="false" />
-                <element signature="e#57227#57228#0" expanded="false" />
-                <element signature="e#57987#57988#0" expanded="false" />
-                <element signature="e#58011#58012#0" expanded="false" />
-                <element signature="e#59822#59823#0" expanded="false" />
-                <element signature="e#59850#59851#0" expanded="false" />
-                <element signature="e#68083#68084#0" expanded="false" />
-                <element signature="e#68121#68122#0" expanded="false" />
-                <element signature="e#70003#70004#0" expanded="false" />
-                <element signature="e#70039#70040#0" expanded="false" />
-                <element signature="e#81635#81636#0" expanded="false" />
-                <element signature="e#81695#81696#0" expanded="false" />
-                <element signature="e#87723#87724#0" expanded="false" />
-                <element signature="e#87765#87766#0" expanded="false" />
-                <element signature="e#97115#97116#0" expanded="false" />
-                <element signature="e#97150#97151#0" expanded="false" />
-                <element signature="e#98663#98664#0" expanded="false" />
-                <element signature="e#98710#98711#0" expanded="false" />
-                <element signature="e#100202#100203#0" expanded="false" />
-                <element signature="e#100275#100276#0" expanded="false" />
-                <element signature="e#101896#101897#0" expanded="false" />
-                <element signature="e#101946#101947#0" expanded="false" />
-                <element signature="e#105677#105678#0" expanded="false" />
-                <element signature="e#105725#105726#0" expanded="false" />
-                <element signature="e#132817#132818#0" expanded="false" />
-                <element signature="e#132870#132871#0" expanded="false" />
-                <element signature="e#135305#135306#0" expanded="false" />
-                <element signature="e#135342#135343#0" expanded="false" />
-                <element signature="e#137101#137102#0" expanded="false" />
-                <element signature="e#137152#137153#0" expanded="false" />
-                <element signature="e#138491#138492#0" expanded="false" />
-                <element signature="e#138518#138519#0" expanded="false" />
-                <element signature="e#150145#150146#0" expanded="false" />
-                <element signature="e#150219#150220#0" expanded="false" />
-                <element signature="e#150498#150499#0" expanded="false" />
-                <element signature="e#150565#150566#0" expanded="false" />
-                <element signature="e#151086#151087#0" expanded="false" />
-                <element signature="e#151150#151151#0" expanded="false" />
-                <element signature="e#171692#171693#0" expanded="false" />
-                <element signature="e#171727#171728#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +78,8 @@
       <file leaf-file-name="Perceptron.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.677665">
-              <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.56852794">
+              <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -240,7 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,7 +222,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -798,7 +741,10 @@
       <workItem from="1453329346063" duration="1488000" />
       <workItem from="1453331172576" duration="2462000" />
       <workItem from="1453333845348" duration="1795000" />
-      <workItem from="1453335727593" duration="616000" />
+      <workItem from="1453335727593" duration="646000" />
+      <workItem from="1453371471232" duration="103000" />
+      <workItem from="1453374800324" duration="1836000" />
+      <workItem from="1453376680491" duration="323000" />
     </task>
     <servers />
   </component>
@@ -835,11 +781,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49936000" />
+    <option name="totallyTimeSpent" value="52228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1233,16 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron_WojciechSasiela.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/FilenameTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1259,76 +1195,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1129" column="44" selection-start-line="1129" selection-start-column="44" selection-end-line="1129" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#193958#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#9052#9053#0" expanded="false" />
-            <element signature="e#9114#9115#0" expanded="false" />
-            <element signature="e#9887#9888#0" expanded="false" />
-            <element signature="e#9934#9935#0" expanded="false" />
-            <element signature="e#10272#10273#0" expanded="false" />
-            <element signature="e#10312#10313#0" expanded="false" />
-            <element signature="e#12356#12357#0" expanded="false" />
-            <element signature="e#12409#12410#0" expanded="false" />
-            <element signature="e#13052#13053#0" expanded="false" />
-            <element signature="e#13083#13084#0" expanded="false" />
-            <element signature="e#37521#37522#0" expanded="false" />
-            <element signature="e#37567#37568#0" expanded="false" />
-            <element signature="e#38880#38881#0" expanded="false" />
-            <element signature="e#38928#38929#0" expanded="false" />
-            <element signature="e#57195#57196#0" expanded="false" />
-            <element signature="e#57227#57228#0" expanded="false" />
-            <element signature="e#57987#57988#0" expanded="false" />
-            <element signature="e#58011#58012#0" expanded="false" />
-            <element signature="e#59822#59823#0" expanded="false" />
-            <element signature="e#59850#59851#0" expanded="false" />
-            <element signature="e#68083#68084#0" expanded="false" />
-            <element signature="e#68121#68122#0" expanded="false" />
-            <element signature="e#70003#70004#0" expanded="false" />
-            <element signature="e#70039#70040#0" expanded="false" />
-            <element signature="e#81635#81636#0" expanded="false" />
-            <element signature="e#81695#81696#0" expanded="false" />
-            <element signature="e#87723#87724#0" expanded="false" />
-            <element signature="e#87765#87766#0" expanded="false" />
-            <element signature="e#97115#97116#0" expanded="false" />
-            <element signature="e#97150#97151#0" expanded="false" />
-            <element signature="e#98663#98664#0" expanded="false" />
-            <element signature="e#98710#98711#0" expanded="false" />
-            <element signature="e#100202#100203#0" expanded="false" />
-            <element signature="e#100275#100276#0" expanded="false" />
-            <element signature="e#101896#101897#0" expanded="false" />
-            <element signature="e#101946#101947#0" expanded="false" />
-            <element signature="e#105677#105678#0" expanded="false" />
-            <element signature="e#105725#105726#0" expanded="false" />
-            <element signature="e#132817#132818#0" expanded="false" />
-            <element signature="e#132870#132871#0" expanded="false" />
-            <element signature="e#135305#135306#0" expanded="false" />
-            <element signature="e#135342#135343#0" expanded="false" />
-            <element signature="e#137101#137102#0" expanded="false" />
-            <element signature="e#137152#137153#0" expanded="false" />
-            <element signature="e#138491#138492#0" expanded="false" />
-            <element signature="e#138518#138519#0" expanded="false" />
-            <element signature="e#150145#150146#0" expanded="false" />
-            <element signature="e#150219#150220#0" expanded="false" />
-            <element signature="e#150498#150499#0" expanded="false" />
-            <element signature="e#150565#150566#0" expanded="false" />
-            <element signature="e#151086#151087#0" expanded="false" />
-            <element signature="e#151150#151151#0" expanded="false" />
-            <element signature="e#171692#171693#0" expanded="false" />
-            <element signature="e#171727#171728#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron_WojciechSasiela.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/PerceptronTest.java">
@@ -1339,18 +1218,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron_WojciechSasiela.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.677665">
-          <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.56852794">
+          <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
           <folding />
         </state>
       </provider>

@@ -13,10 +13,10 @@ public class Main {
         double[] w = new double[4]; // pamiec perceptronu (macierz wag dla aktualnie iterowanego wiersza)
 
         double[][] iSetX = new double[4][2];
-        iSetX[0][0] = 0; iSetX[0][0] = 0;
-        iSetX[0][0] = 0; iSetX[0][0] = 1;
-        iSetX[0][0] = 1; iSetX[0][0] = 0;
-        iSetX[0][0] = 1; iSetX[0][0] = 1;
+        iSetX[0][0] = 0; iSetX[0][1] = 0;
+        iSetX[1][0] = 0; iSetX[1][1] = 1;
+        iSetX[2][0] = 1; iSetX[2][1] = 0;
+        iSetX[3][0] = 1; iSetX[3][1] = 1;
 
         double[] iSetD = new double[4];
         iSetD[0] = 1;
@@ -35,18 +35,17 @@ public class Main {
         );
 
 
-
-        for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
-        {
-            p.LearningStep();
+        for(int krok=0; krok <=10; krok++) {
+            for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
+            {
+                p.LearningStep();
+            }
+            p.ResetLearningProcess();
         }
-
-        p.ResetLearningProcess();
-
-        Perceptron_WojciechSasiela okno = new Perceptron_WojciechSasiela();
-
-
-
-
     }
+//        Perceptron_WojciechSasiela okno = new Perceptron_WojciechSasiela();
+
+
+
+
 }
