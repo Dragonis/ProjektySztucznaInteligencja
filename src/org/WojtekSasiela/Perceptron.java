@@ -33,6 +33,8 @@ public class Perceptron {
 
     public int krok;                   // informacja o numerze kroku uczenia, startowo krok = 0;
 
+    public Random random;
+
 // zachowanie Perceptronu:
 
     public Perceptron(int _n, int _f, double[] _w, double[][] _iSetX, double[] _iSetD, int _m, double _r) {
@@ -49,6 +51,8 @@ public class Perceptron {
         this.iSetX = _iSetX;
         this.iSetD = _iSetD;
         this.w = _w;
+
+
 
 //        // inicjacja zbioru uczącego
 //        this.iSetX = new double[m][];
@@ -108,6 +112,18 @@ public class Perceptron {
 
     // metoda wykonująca jeden krok procesu uczenia
     public void LearningStep() {
+        int a = -10, b = 10;
+
+        // macierz wag bedzie zapisana w postaci macierzy
+//        [ DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
+//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
+//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);]
+
+        w[0] = DrawWeight(a, b);
+        w[1] = DrawWeight(a, b);
+        w[2] = DrawWeight(a, b);
+        w[3] = DrawWeight(a, b);
+
         Test();
         System.out.println(toString());
         krok++;
@@ -179,8 +195,8 @@ public class Perceptron {
         //  return a + (b - a) * random.nextDouble();
         //  return Math.random() * (b - a) + a;
 
-        double digit = ThreadLocalRandom.current().nextDouble(a, b);
-        return new BigDecimal(digit).setScale(3, RoundingMode.HALF_UP).doubleValue();
+        random = new Random();
+        return  a + (b - a) * random.nextDouble();
     }
 
     // metoda pozwalająca na konwersją obiektu klasy Perceptron na łańcuch znaków (na potrzeby wyświetlania stanu obiektu)

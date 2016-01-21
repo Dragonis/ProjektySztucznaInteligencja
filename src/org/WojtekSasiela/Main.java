@@ -34,16 +34,7 @@ public class Main {
                 1// Ro, współczynnik uczenia
         );
 
-        // macierz wag bedzie zapisana w postaci macierzy
-//        [ DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
-//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);
-//        DrawWeight(a, b); DrawWeight(a, b); DrawWeight(a, b);]
 
-        int a = -2, b = 2;
-        w[0] = p.DrawWeight(a, b);
-        w[1] = p.DrawWeight(a, b);
-        w[2] = p.DrawWeight(a, b);
-        w[3] = p.DrawWeight(a, b);
 
         for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
         {
