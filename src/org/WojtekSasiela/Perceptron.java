@@ -35,6 +35,10 @@ public class Perceptron {
 
     public int krok;                   // informacja o numerze kroku uczenia, startowo krok = 0;
 
+    public int nr_wiersza;
+
+    public int iteracjaTabeli;
+
     public Random random;
 
 // zachowanie Perceptronu:
@@ -126,9 +130,25 @@ public class Perceptron {
         w[2] = DrawWeight(a, b);
         w[3] = DrawWeight(a, b);
 
+        
+            if(krok >= 0 && krok < 1*w.length)
+            {
+                nr_wiersza = krok;
+            }
+            if(krok >= 1*w.length && krok <= 2*w.length)
+            {
+                iteracjaTabeli = 1;
+                nr_wiersza = krok % w.length;
+            }
+            if(krok >= 2*w.length && krok <= 3*w.length)
+            {
+            iteracjaTabeli = 2;
+            nr_wiersza = krok % w.length;
+            }
+
         Test();
         System.out.println(toString());
-        krok++;
+
     }
 
     // metoda resetuje proces uczenia (reset pola krok oraz losowanie wag?)
@@ -176,12 +196,12 @@ public class Perceptron {
     // 0 na wyjściu oznacza, że neruon nauczył się już funkcji ze zbioru uczącego
     public int Test() {
 
-        double obliczonySygnal = ComputeS(iSetX[krok]);
-        double obliczoneY = ComputeY(iSetX[krok]);
+        double obliczonySygnal = ComputeS(iSetX[nr_wiersza]);
+        double obliczoneY = ComputeY(iSetX[nr_wiersza]);
         int brakPunktuStalego = 0;
         int punktStaly = 0;
 
-        if (obliczoneY == iSetD[krok]) {
+        if (obliczoneY == iSetD[nr_wiersza]) {
             punktStaly++;
         } else {
             brakPunktuStalego++;
@@ -212,15 +232,14 @@ public class Perceptron {
         if (f == 1){ funkcjaAktywacji = "unipolarna"; };
         if (f == -1){ funkcjaAktywacji = "bipolarna"; };
         String napis = "";
-        int nr_wiersza = krok+1;
 
-        String leftAlignFormat = "| %-4s    | %-4s | "+ANSI_BLUE+"%.2f"+ANSI_RESET+" "+ANSI_RED+"| %.2f"+ANSI_RESET+"| %.2f    | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %n";
+        String leftAlignFormat = "| %-4s              | %-4s    | %-4s    | %-4s | "+ANSI_BLUE+"%.2f"+ANSI_RESET+" "+ANSI_RED+"| %.2f"+ANSI_RESET+"| %.2f    | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %.2f | %n";
 
-        System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
-        System.out.format("|  wiersz |  n   |  "+ANSI_BLUE+"s"+ANSI_RESET+"   |  "+ANSI_RED+"y"+ANSI_RESET+"   |  w0     |  w1  |  w2  |  w3  |  d0  |  d1  |  d2  |  d3  |  x0  |  x1  |%n");
-        System.out.format("+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
-            System.out.format(leftAlignFormat,nr_wiersza, n, s, y, w[0], w[1], w[2], w[3], iSetD[0], iSetD[1], iSetD[2], iSetD[3], iSetX[krok][0], iSetX[krok][1]);
-        System.out.format("+---------+------+------+------+--------+------+------+------+------+------+------+------+------+------+%n");
+        System.out.format("+------------------+---------+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
+        System.out.format("| iteracja tabeli  |  krok   |  wiersz |  n   |  "+ANSI_BLUE+"s"+ANSI_RESET+"   |  "+ANSI_RED+"y"+ANSI_RESET+"   |  w0     |  w1  |  w2  |  w3  |  d0  |  d1  |  d2  |  d3  |  x0  |  x1  |%n");
+        System.out.format("+------------------+---------+---------+------+------+------+---------+------+------+------+------+------+------+------+------+------+%n");
+            System.out.format(leftAlignFormat,iteracjaTabeli, krok, nr_wiersza, n, s, y, w[0], w[1], w[2], w[3], iSetD[0], iSetD[1], iSetD[2], iSetD[3], iSetX[nr_wiersza][0], iSetX[nr_wiersza][1]);
+        System.out.format("+------------------+---------+------+------+------+--------+------+------+------+------+------+------+------+------+------+%n");
 
 //        napis+="Stan perceptronu \n";
 //        napis+= "Funkcja aktywacji: "+ funkcjaAktywacji +", \n";

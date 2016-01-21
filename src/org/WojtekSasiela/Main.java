@@ -35,9 +35,10 @@ public class Main {
         );
 
 
-            for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
+            for (int i = 1; i <= 10; i++) // liczba wierszy do wykonania np. 30
             {
                 p.LearningStep();
+                p.krok = i;
             }
             p.ResetLearningProcess();
 

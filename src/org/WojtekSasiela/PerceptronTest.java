@@ -117,7 +117,7 @@ public class PerceptronTest {
         p.ResetLearningProcess();
         assertEquals(p.w,null);
         assertEquals(p.f,0);
-        assertEquals(p.krok,0);
+        assertEquals(p.nr_wiersza,0);
         assertEquals(p.iSetD,null);
         assertEquals(p.iSetX,null);
         assertEquals(p.m,0);
