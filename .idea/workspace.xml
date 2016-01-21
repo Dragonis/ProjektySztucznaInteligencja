@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8f49089-623e-4a41-a932-97a28f56fc78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjektPerceptron_WojtekSasiela/org/WojtekSasiela/Main.class" afterPath="$PROJECT_DIR$/out/production/ProjektPerceptron_WojtekSasiela/org/WojtekSasiela/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjektPerceptron_WojtekSasiela/org/WojtekSasiela/Perceptron.class" afterPath="$PROJECT_DIR$/out/production/ProjektPerceptron_WojtekSasiela/org/WojtekSasiela/Perceptron.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/WojtekSasiela/Main.java" afterPath="$PROJECT_DIR$/src/org/WojtekSasiela/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java" afterPath="$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java" />
     </list>
     <ignored path="ProjektPerceptron_WojtekSasiela.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.677665">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Perceptron.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Perceptron.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56852794">
+            <state vertical-scroll-proportion="0.0">
               <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
               <folding />
             </state>
@@ -135,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/org/WojtekSasiela/FilenameTableModel.java" />
         <option value="$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron_WojciechSasiela.java" />
         <option value="$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron_WojciechSasiela.form" />
-        <option value="$PROJECT_DIR$/src/org/WojtekSasiela/Main.java" />
         <option value="$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java" />
+        <option value="$PROJECT_DIR$/src/org/WojtekSasiela/Main.java" />
       </list>
     </option>
   </component>
@@ -744,7 +741,7 @@
       <workItem from="1453335727593" duration="646000" />
       <workItem from="1453371471232" duration="103000" />
       <workItem from="1453374800324" duration="1836000" />
-      <workItem from="1453376680491" duration="323000" />
+      <workItem from="1453376680491" duration="400000" />
     </task>
     <servers />
   </component>
@@ -781,7 +778,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52228000" />
+    <option name="totallyTimeSpent" value="52305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1228,18 +1225,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Perceptron.java">
+    <entry file="file://$PROJECT_DIR$/src/org/WojtekSasiela/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56852794">
-          <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.677665">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>

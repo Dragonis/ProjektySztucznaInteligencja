@@ -35,13 +35,12 @@ public class Main {
         );
 
 
-        for(int krok=0; krok <=10; krok++) {
             for (int i = 1; i <= w.length; i++) // liczba wierszy do wykonania np. 30
             {
                 p.LearningStep();
             }
             p.ResetLearningProcess();
-        }
+
     }
 //        Perceptron_WojciechSasiela okno = new Perceptron_WojciechSasiela();
 
